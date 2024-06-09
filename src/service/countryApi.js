@@ -2,7 +2,7 @@ import axios from 'axios';
 import { transformCountriesData, transformCountryData } from 'helpers';
 
 axios.defaults.baseURL = 'https://countryapi.io/api/';
-axios.defaults.headers.common.Authorization = ` Bearer IjCRRrSze4snbUy6EfEaCVGiXxNg184G8UFW3Fnw`;
+axios.defaults.headers.common.Authorization = ` Bearer NmV6eKUkvCV1Sfg3v3BVuv7m3x7iayViw14I994t`;
 
 export const getCountries = async () => {
   const { data } = await axios.get('/all');
