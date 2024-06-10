@@ -13,7 +13,6 @@ export const useFetchCountries = () => {
             setError(null);
 
             try {
-
                 const data = await getCountries();
                 setCountries(data);
             } catch (error) {
@@ -25,7 +24,5 @@ export const useFetchCountries = () => {
         fetchData();
     }, [])
 
-  return {
-    countries, isLoading, error
-  }
+  return {countries, isLoading, error}
 }
